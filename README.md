@@ -2,30 +2,35 @@
 
 A single-page personal portfolio website built with **HTML5 and CSS3 only** for the Web Development assignment at IIM Sirmaur. No frameworks and no JavaScript are used.
 
+Live site: https://sanskriti8761-max.github.io/sanskriti-portfolio/
+
 ## Project structure
 
 ```
-personal-portfolio/
-├── index.html        Page content and structure
-├── style.css         All styling (external stylesheet)
+sanskriti-portfolio/
+├── index.html          Page content and structure (must stay in the root)
+├── style.css           All styling (external stylesheet)
 ├── assets/
-│   └── resume.pdf    Resume used by the "Download resume" button
-└── README.md         This file
+│   ├── profile.jpg     Photograph used in the hero section
+│   └── resume.pdf      Resume used by the "Download resume" button
+└── README.md           This file
 ```
 
 ## Sections
 
 | Section | Purpose |
 |---|---|
-| Navigation bar | Sticky bar with the wordmark and links to every section |
-| Hero | Name, academic identity, short introduction and two buttons |
-| About | Short background and what I am looking for |
+| Navigation bar | Sticky bar with the wordmark and links to each section |
+| Hero | Name, positioning line, introduction, photograph and two buttons |
+| About | Academic journey, interests, campus roles and mentoring |
 | Education | Timeline of IIM Sirmaur, IIM Bangalore and school |
-| Skills | Skills grouped by category, plus languages |
-| Projects | Four academic research projects in a grid of cards |
+| Skills | Four groups: Business & Management, Research & Analytical, Creative & Digital, Communication |
+| Projects | Six project cards plus additional academic and creative work |
+| Explore My Work | Button to the full Google Drive portfolio (opens in a new tab) |
 | Experience | Positions of responsibility, work and volunteering |
-| Achievements | Certifications and simulations completed |
-| Contact | Email, GitHub and location, followed by a footer |
+| Achievements | Certifications and simulations |
+| Hobbies & Interests | Six short interest cards |
+| Contact | Email, GitHub, LinkedIn and location, then a footer |
 
 ## Running locally
 
@@ -34,14 +39,14 @@ personal-portfolio/
 
 An internet connection is needed only for the Google Fonts (Playfair Display and Inter). Without it, Georgia and Arial are used instead.
 
-## Hosting on GitHub Pages
+## Updating the GitHub repository
 
-1. Upload the contents of this folder to the root of the repository (`index.html` must be at the top level, not inside a sub-folder).
-2. In the repository, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
-4. After a minute or two the site is available at `https://<username>.github.io/<repository-name>/`.
+1. Open https://github.com/sanskriti8761-max/sanskriti-portfolio and click **Add file → Upload files**.
+2. Drag in `index.html`, `style.css` and the `assets` folder from the unzipped project (not the ZIP file or the outer folder).
+3. Confirm that files with the same name are replaced, write a short commit message and click **Commit changes**.
+4. GitHub Pages republishes automatically after a minute or two. No Pages settings need to change.
 
-All file paths in the project are relative, so it works on GitHub Pages without changes.
+All file paths are relative, so the site works on GitHub Pages without changes.
 
 ## CSS concepts demonstrated
 
@@ -51,11 +56,12 @@ All file paths in the project are relative, so it works on GitHub Pages without 
 - Colours, backgrounds, margin, padding, borders, `border-radius`, `box-shadow`, `box-sizing`
 - `display`: block, inline-block, flex and grid
 - Flexbox for the navigation bar, buttons, role headings and footer
-- CSS Grid for About, Skills, Projects, Experience, Certifications and Contact
+- CSS Grid for the hero, About, Skills, Projects, Experience, Certifications, Interests and Contact
 - Positioning: `sticky` (header), `relative` and `absolute` (nav underline, timeline dots, bullets)
+- `object-fit` and `aspect-ratio` for the circular hero photograph
 - Hover and transition effects on links, buttons and cards
 - Media queries at 1000px, 860px and 560px for laptops, tablets and phones
 
 ## Content notes
 
-All content comes from the resume. The phone number and any street address are deliberately not shown on the page.
+Content comes from the resume and from details provided directly. The phone number and street address are deliberately not shown.
